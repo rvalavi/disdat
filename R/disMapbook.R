@@ -24,6 +24,8 @@ disMapBook <- function(region, output_pdf, verbose = TRUE){
     regions <- c('AWT', 'CAN', 'NSW', 'NZ', 'SA', 'SWI')
   }
   regions <- lapply(regions, .checkRegion)
+  oldpar <- graphics::par(no.readonly = TRUE) # save user's setting
+  on.exit(graphics::par(oldpar))
   grDevices::pdf(output_pdf, width = 8.5, height = 10) # pdf setting
   for(r in regions){
     poly <- disBorder(r)
