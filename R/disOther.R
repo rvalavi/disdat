@@ -7,10 +7,8 @@ disBorder <- function(region, pkg="sf"){
 	d <- file.path(path, paste0(r, ".gpkg"))
 	if (pkg == "sf") {
 		bor <- sf::st_read(d, quiet = TRUE)
-	} else if (pkg == "sp") {
-		bor <- rgdal::readOGR(d, verbose=FALSE)
 	} else {
-		bor <- terra::vect(d, quiet = TRUE)
+		bor <- terra::vect(d)
 	}
 	return(bor)
 }

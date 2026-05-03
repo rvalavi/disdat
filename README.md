@@ -1,5 +1,9 @@
 # disdat
 
+[![CRAN version](https://www.r-pkg.org/badges/version/disdat)](https://CRAN.R-project.org/package=disdat)
+[![total](https://cranlogs.r-pkg.org/badges/grand-total/disdat)](https://CRAN.R-project.org/package=disdat)
+[![Biodiversity Informatics](https://img.shields.io/badge/Biodiversity%20Informatics-15,%2069--80-blue.svg)](https://doi.org/10.17161/bi.v15i2.13384)
+
 ## Data for Evaluating Species Distribution Modelling Methods
 
 This package consists of a collection of datasets that can be used to compare species distribution models. There are data for 6 regions in the world, for a total of 226 anonymised species including birds, vascular plants, reptiles and bats. Each data set has presence-only (and optionally background) training data to build models, and presence/absence data to evaluate models.
@@ -7,7 +11,9 @@ This package consists of a collection of datasets that can be used to compare sp
 
 ## Installation
 
-You can install the package from `R` with the `remotes` package. Like this
+The package is [available from CRAN](https://cran.r-project.org/web/packages/disdat/index.html). You can install it with `install.packages("disdat")`. 
+
+To install the github development version, you can use the `remotes` package like this
 
 ```
 library(remotes)

@@ -1,14 +1,14 @@
 Package: disdat
 Type: Package
 Title: Data for Comparing Species Distribution Modeling Methods
-Version: 1.0-0
-Date: 2020-08-07
+Version: 1.1-0
+Date: 2026-04-13
 Maintainer: Roozbeh Valavi <valavi.r@gmail.com>
 License: GPL (>=3)
 Encoding: UTF-8
 LazyLoad: yes
 Depends: R (>= 3.5.0)
-Suggests: knitr, rmarkdown, sf, terra, raster, rgdal, mapview
+Suggests: knitr, rmarkdown, terra, sf, tmap, mapview
 VignetteBuilder: knitr
 NeedsCompilation: no
 Authors@R: c(
@@ -17,3 +17,4 @@ Authors@R: c(
     person("Roozbeh", "Valavi", role = c("cre", "aut"), email = "valavi.r@gmail.com"),
     person("Jane", "Elith",  role = "aut", email = "j.elith@gmail.com"))
 Description: Easy access to species distribution data for 6 regions in the world, for a total of 226 anonymised species. These data are described and made available by Elith et al (2020) <doi:10.17161/bi.v15i2.13384> to compare species distribution modelling methods. 
+RoxygenNote: 7.3.3
